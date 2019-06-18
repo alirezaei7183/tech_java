@@ -2,24 +2,13 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-06-18T16:19:01</date>
-  <millis>1560858541901</millis>
+  <date>2019-06-18T19:55:57</date>
+  <millis>1560871557264</millis>
   <sequence>4</sequence>
   <logger>rezaei.controller.PlayerController</logger>
   <level>INFO</level>
   <class>rezaei.controller.PlayerController</class>
   <method>createPlayerScore</method>
-  <thread>39</thread>
+  <thread>56</thread>
   <message>method:POST------ url:game/score</message>
-</record>
-<record>
-  <date>2019-06-18T16:19:05</date>
-  <millis>1560858545029</millis>
-  <sequence>5</sequence>
-  <logger>rezaei.controller.PlayerController</logger>
-  <level>INFO</level>
-  <class>rezaei.controller.PlayerController</class>
-  <method>retrieveStudent</method>
-  <thread>40</thread>
-  <message>method:GET------ url:game/score</message>
 </record>

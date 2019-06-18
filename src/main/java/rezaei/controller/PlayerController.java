@@ -32,28 +32,6 @@ public class PlayerController {
     private Long plaI;
     private Map<String, Object> response;
     private static final Logger LOGGER = Logger.getLogger(PlayerController.class.getName());
-
-    @GetMapping("/index")
-    public List<Player> sayHello() {
-
-        return playerRepository.findAll();
-
-    }
-
-    @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new Greeting(counter.incrementAndGet(),
-                String.format(template, name));
-    }
-
-    @PostMapping("/game/score1")
-    public Player createPlayer(@RequestBody Player player) {
-        Player game = playerRepository.save(player);
-
-        return new Player(game.getPlayerId(), game.getScore(), game.getRank());
-
-    }
-
     @PostMapping("/game/score")
     public Map<String, Object> createPlayerScore(@RequestBody Player player) throws errorResult, IOException {
         // return playerRepository.save(player);
